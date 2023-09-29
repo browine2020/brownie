@@ -1,14 +1,20 @@
-# Default function to implement conditions to check leap year  
-def CheckLeap(Year):  
-  # Checking if the given year is leap year  
-  if((Year % 400 == 0) or  
-     (Year % 100 != 0) and  
-     (Year % 4 == 0)):   
-    print("Given Year is a leap Year");  
-  # Else it is not a leap year  
-  else:  
-    print ("Given Year is not a leap Year")  
-# Taking an input year from user  
-Year = int(input("Enter the number: "))  
-# Printing result  
-CheckLeap(Year)  
+class player:
+  def play(self):
+    print("the player is playing cricket.")
+
+class Batsman(player):
+  def play(self):
+    print ("the batsman is batting.")
+
+class Bowler(player):
+  def play(self):
+    print("the bowler is bowling.")
+
+batsman = Batsman()
+bowler = Bowler()
+
+batsman.play()
+bowler.play()
+
+
+
